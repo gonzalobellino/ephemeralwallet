@@ -1,4 +1,4 @@
-# Ephimeral Wallet
+# Ephemeral Wallet
 
 
 DYI Arduino Ethereum wallet for standalone private key generation. This project it's for fun and in development, anyway the generated keys are good enough to be used 
@@ -47,7 +47,7 @@ Because is fun, cheap to build and we can generate a private key without a compu
 ## Sketch board model
 
 
-![diagram](https://github.com/gonzalobellino/ephimeralwallet/raw/master/arduino/EphimeralWallet.jpg)
+![diagram](https://github.com/gonzalobellino/ephemeralwallet/raw/master/arduino/EphemeralWallet.jpg)
 
 ## Usage
 
@@ -75,20 +75,20 @@ Arduino visual editor like this https://create.arduino.cc/editor or a command li
 ### Procedure using command-cli
  
  ```
-git clone https://github.com/gonzalobellino/ephimeralwallet.git
+git clone https://github.com/gonzalobellino/ephemeralwallet.git
 cd ./arduino
 
 arduino-cli config init
-arduino-cli sketch new EphimeralWallet
+arduino-cli sketch new EphemeralWallet
 arduino-cli core update-index
 arduino-cli board list
 arduino-cli core install arduino:avr
 arduino-cli lib install "LiquidCrystal I2C"
 arduino-cli lib install IRremote 
 
-arduino-cli compile --fqbn arduino:avr:mega EphimeralWallet.ino --libraries ./libraries --verbose -b arduino:avr:mega
+arduino-cli compile --fqbn arduino:avr:mega EphemeralWallet.ino --libraries ./libraries --verbose -b arduino:avr:mega
 
-arduino-cli upload -p COM3 --fqbn arduino:avr:mega -t -i EphimeralWallet.ino.arduino.avr.mega.hex
+arduino-cli upload -p COM3 --fqbn arduino:avr:mega -t -i EphemeralWallet.ino.arduino.avr.mega.hex
 
    
  ``` 
