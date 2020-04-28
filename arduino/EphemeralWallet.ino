@@ -10,6 +10,7 @@
 //   https://github.com/arduino/Arduino/issues/575
 #define randomSeed(s) srandom(s)
 
+//mapping for IR remote control DEC compliant 
 const unsigned long IR_ARROW_UP_KEY = 0x00FF629D;
 const unsigned long IR_OK_KEY = 0x00FF02FD;
 const unsigned long IR_ARROW_DOWN_KEY = 0x00FFA857;
@@ -31,7 +32,7 @@ String privateKey = "N/A";
 decode_results results;
 IRrecv irrecv(RECV_PIN);
 
-//more addresses can be defined, for example  0x3F. Use I2C scanner if none of us work
+//more addresses can be defined, for example  0x3F. Use I2C scanner if dont work
 LiquidCrystal_I2C lcd(0x27,16,2);
 
 //Overwritted RNG function for enhance random generation using Entropy library
@@ -107,18 +108,10 @@ void generateWallet() {
   memcpy(address, &hashed[12], 20);
   walletAddress =  "0x" + String( convertBytesKeyToHexKey(address, 20));
   privateKey = String(convertBytesKeyToHexKey(pk, 32));
-
-  //Serial.println(privateKey);
-  //Serial.println(walletAddress);
-  //Serial.println("&" + privateKey + "!");
-  //Serial.println("#" + wallet + "$");
-  //logSerial(wallet.c_str());
-  //Serial.println("#" + wallet + "$");
-  //Serial.end() Serial.begin() controlar desde opciones del control remoto
 }
 
 void setup() {
-  //@todo change Serial to disabled by default
+  //@todo change Serial to disabled by default. Serial.end()
   Serial.begin(115200);
   irrecv.enableIRIn();
   lcd.init();
