@@ -27,11 +27,11 @@ Because is fun, cheap to build and we can generate a private key without a compu
 
 ## Materials needed
 
-| Part | Cost |
-| -------- | -------- | -------- |
+| Part             | Cost    |
+| ---------------- | --------| 
 |Arduino board 2560| $40.30|
-|LCD 16x2 I2C | $2.40 |
-|IR receiver + RC | $5 |
+|LCD 16x2 I2C      | $2.40 |
+|IR receiver + RC  | $5 |
 |6-cell AA Battery holder | $2.5 |
 
 
@@ -63,7 +63,7 @@ This is a list of remote control keys with functional actions:
  - Key Arrow up: Show the first 32 characters of private key
 
 
-> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://https://medium.com/@gonzalobellino)
+> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://medium.com/@gonzalobellino)
 
 
 ## Installation
@@ -92,7 +92,7 @@ arduino-cli upload -p COM3 --fqbn arduino:avr:mega -t -i EphimeralWallet.ino.ard
 
    
  ``` 
-> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://https://medium.com/@gonzalobellino)
+> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://medium.com/@gonzalobellino)
 
 
 ## Unvaluable libraries
@@ -107,6 +107,3 @@ arduino-cli upload -p COM3 --fqbn arduino:avr:mega -t -i EphimeralWallet.ino.ard
 
 ## Contact
 Linkedin: https://www.linkedin.com/in/gonzalo-bellino-1a1877150/
-
-## Copyright
-Copyright 2020 Gonzalo Bellino
