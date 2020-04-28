@@ -4,9 +4,9 @@
    "version": "2.0.0",
    "tasks": [
        {
-           "label": "EphimeralWallet-compile",
+           "label": "EphemeralWallet-compile",
            "type": "shell",
-           "command": "arduino-cli compile --fqbn arduino:avr:mega ./arduino/EphimeralWallet.ino --libraries ./arduino/libraries --verbose -b arduino:avr:mega",
+           "command": "arduino-cli compile --fqbn arduino:avr:mega ./arduino/EphemeralWallet.ino --libraries ./arduino/libraries --verbose -b arduino:avr:mega",
            "group": "build",
            "isBackground": false,
            "presentation": {
@@ -19,9 +19,9 @@
            "problemMatcher": []
        },
        {
-           "label": "EphimeralWallet-upload",
+           "label": "EphemeralWallet-upload",
            "type": "shell",
-           "command": "arduino-cli upload -p COM3  --fqbn arduino:avr:mega -t -i ./arduino/EphimeralWallet.ino.arduino.avr.mega.hex",
+           "command": "arduino-cli upload -p COM3  --fqbn arduino:avr:mega -t -i ./arduino/EphemeralWallet.ino.arduino.avr.mega.hex",
            "group": "test",
            "isBackground": false,
            "presentation": {
@@ -34,10 +34,10 @@
            "problemMatcher": []
        },
        {
-        "dependsOn": "EphimeralWallet-compile",
-        "label": "EphimeralWallet-all",
+        "dependsOn": "EphemeralWallet-compile",
+        "label": "EphemeralWallet-all",
         "type": "shell",
-        "command": "arduino-cli upload -p COM3  --fqbn arduino:avr:mega -t -i ./arduino/EphimeralWallet.ino.arduino.avr.mega.hex",
+        "command": "arduino-cli upload -p COM3  --fqbn arduino:avr:mega -t -i ./arduino/EphemeralWallet.ino.arduino.avr.mega.hex",
         "group": "test",
         "isBackground": false,
         "presentation": {
