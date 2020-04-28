@@ -21,7 +21,7 @@ Because is fun, cheap to build and we can generate a private key without a compu
  - Low battery detection
  
 ## Pending issues
- - Reviewing ECDSA, FireFly and Entrophy libraries used in this project.
+ - Auditing FireFly and Entrophy libraries used in this project.
 
 ---
 
@@ -29,7 +29,7 @@ Because is fun, cheap to build and we can generate a private key without a compu
 
 | Part | Cost |
 | -------- | -------- | -------- |
-|Arduino board 2560| $40.30
+|Arduino board 2560| $40.30|
 |LCD 16x2 I2C | $2.40 |
 |IR receiver + RC | $5 |
 |6-cell AA Battery holder | $2.5 |
