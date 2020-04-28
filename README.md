@@ -63,7 +63,7 @@ This is a list of remote control keys with functional actions:
  - Key Arrow up: Show the first 32 characters of private key
 
 
-> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://https://medium.com/@gonzalobellino)
+> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://medium.com/@gonzalobellino)
 
 
 ## Installation
@@ -92,7 +92,7 @@ arduino-cli upload -p COM3 --fqbn arduino:avr:mega -t -i EphimeralWallet.ino.ard
 
    
  ``` 
-> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://https://medium.com/@gonzalobellino)
+> Futher information about usage will be found soon in this page [https://medium.com/@gonzalobellino](https://medium.com/@gonzalobellino)
 
 
 ## Unvaluable libraries
