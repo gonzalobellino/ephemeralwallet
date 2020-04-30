@@ -12,8 +12,8 @@ Because is fun, cheap to build and we can generate a private key without a compu
 
 ## Features
 
- - Private key generation (Elliptic Curve Cryptography)
- - Wallet Address generation
+ - Private key generation ETH & BTC (Elliptic Curve Cryptography)
+ - Wallet Address generation (ETH)
  
 ## Future features
  - PrivateKey importer: A command line tool por recovering your private key from the Arduino Board (with user agreement)
